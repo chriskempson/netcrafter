@@ -23,11 +23,16 @@ Out of the box not a lot but with a little love in the form of plugins it can pe
     }
     
 ## Why?
-As much as I enjoyed using static content generators such as Jekyll I was always forgetting how to use them as I update my sites infrequently. One thing I never forget how to use however, is HTML/CSS. I'm weird and I enjoy authoring HTML by hand so I set about trying to make a website with HTML/CSS alone like I used to back in the 90's! It wasn't long before the need to include a scripting language arose (PHP - since it runs on most servers) but I used as little of it as possible. Only the bare miniumum required for me to build my HTML website [chriskempson.com](http://chriskempson.com).
+As much as I enjoyed using static content generators such as Jekyll I was always forgetting how to use them as I update my sites infrequently. One thing I never forget how to use however, is HTML/CSS. I'm weird and I enjoy authoring HTML by hand so I set about trying to make a website with HTML/CSS alone like I used to back in the 90's! It wasn't long before the need to include a scripting language arose (PHP - since it runs on most servers) but I used as little of it as possible. Only the bare minimum required for me to build my HTML website [chriskempson.com](http://chriskempson.com).
 
 ## Get up and running
 You can preview your site with PHP-CLI's inbuilt webserver.
 
     php -S 0.0.0.0:8000 -t public
+
+    or run
+
+    ./serve.sh
+
     
-Now you are free to create whatever you like, however you see fit. Koishi is more of a way of doing something rather then a predefind structure. 
+Next point your browser at http://127.0.0.1:8000. Now you are free to create whatever you like, however you see fit. Koishi is more of a way of doing something rather then a predefined structure.
