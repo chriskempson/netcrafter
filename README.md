@@ -2,7 +2,7 @@
 Koishi is my attempt at building the least complicated method I could think of for manually building small websites by hand.
 
 ## What is it?
-A way of creating simple (mostly HTML) websites by hand and a few files to guide you.
+A ultra minimalist way of creating simple (mostly HTML) websites by hand and a few files to guide you.
 
 ## What can it do?
 Out of the box not a lot but with a little love in the form of plugins it can perform a few new tricks. To create a new plugin, just add a new directory with a name of your choosing to the plugins directory and create a new `plugin.php` file within. All you need to add now is some lovely code to that your new plugin. e.g. `plugins/years_since/plugin.php`
