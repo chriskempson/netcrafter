@@ -1,11 +1,18 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/../koishi.php' ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/../netcrafter.php' ?>
 
-<meta name="title" content="Title">
+<title>Netcrafter</title>
 
-<?php $meta = get_meta_tags(__FILE__) ?>
-<?php include partials . 'header.php' ?>
+<?php partial('header') ?>
 
-<h1>Hello World</h1>
-<p>Some text here...</p>
+<h1>Welcome to the World Wide Web</h1>
+<p>You are surfing the information highway!</p>
 
-<?php include partials . 'footer.php' ?>
+<p>This is <a href="https://github.com/chriskempson/netcrafter">hyperlink</a> to the project page.</p>
+
+<p>Here is some <strong>bold</strong> text and some <em>italic</em> for your enjoyment.<p>
+
+<p>This page's title is: <code><?= meta('title') ?><code></p>
+
+<p><a href="https://github.com/chriskempson/netcrafter"><img src="/made-with-netcrafter.gif"></a></p>
+
+<?php partial('footer') ?>

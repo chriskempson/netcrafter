@@ -1,7 +1,7 @@
 <?php
 /**
- * Koishi v1.0 - Handcrafted HTML websites with a sprinkling of PHP
- * https://github.com/chriskempson/koishi
+ * Netcrafter v1.0 - Finger generated HTML!
+ * https://github.com/chriskempson/netcrafter
  */
  
 // **** CONFIG **************************************************************
@@ -14,14 +14,14 @@ define ('PARTIAL_PATH', DOCUMENT_ROOT . '../partials/');
 define ('PLUGIN_PATH', DOCUMENT_ROOT . '../plugins/');
 
 // **** HELPER FUNCTIONS ****************************************************
-// These functions are exposed by Koishi to help you build your website
+// These functions are exposed by Netcrafter to help you build your website
 
 /**
 * Includes a partial file
 *
 * A partial file is a piece of HTML that makes up a page e.g the header, 
 * navigation and footer could all be partials. The file will be included
-* from the PARTIAL_PATH as defined at the top of koishi.php and should be
+* from the PARTIAL_PATH as defined at the top of netcrafter.php and should be
 * a PHP file.
 *
 * @param string $name Name of the file minus the ".php"
@@ -100,4 +100,4 @@ if (!is_file(DOCUMENT_ROOT . $_SERVER["REQUEST_URI"]. '/index.php')) {
 }
 
 // Get the ball rolling with the first partial
-partial('html-head');
+partial('html');
