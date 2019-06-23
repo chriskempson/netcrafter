@@ -6,12 +6,13 @@ Netcrafter is a ~~way of life~~ way of building websites that unashamedly slaps 
 **Scientific Fact:** Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) measuring just a few KBs ~~heavy~~ light!
 
 ## Up and running before your dial-up has time to sync!
-Shove this up in your CLI
+Shove this in your CLI:
 
-    git clone git@github.com:chriskempson/netcrafter.git my-new-website
+    git clone git@github.com:chriskempson/netcrafter.git my-first-website
+    cd my-first-website
     ./serve-website.sh
 
-Point a modern browser (e.g. Netscape Navigator, IE) at http://localhost:8000
+Next, point a modern browser (e.g. Netscape Navigator, IE) at http://localhost:8000. Now, marvel at the stunning welcome page.
 
 ## The lowdown
 A ultra minimalist way of creating simple websites by hand. Essentially the core philosophy of Netcrafter boils down to this:
