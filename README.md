@@ -1,4 +1,4 @@
-# Netcrafter
+# ![Netcrafter](netcrafter.gif)
 Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of Frontpage/Dreamweaver and lovingly craft your small part of the Internet with finger generated HTML!
 
 Netcrafter is a ~~way of life~~ way of building websites that unashamedly slaps you in the face with HTML. Netcrafter is made possible by a scripting language quickly gaining traction on the World Wide Web known as PHP. With Netcrafter you'll be churning out radical websites before the dot-com bubble has even burst!
