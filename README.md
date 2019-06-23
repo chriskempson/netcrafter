@@ -134,3 +134,5 @@ function years_since($date) {
 I used a few static content generators but I was always forgetting the commands required to do simple things like add a new page. I just wanted to author an HTML website and didn't care for learning about the nuances of a static content generator. So I built a very simple consisting of a single PHP file and a couple of scripts weighing in at a few KBs.
 
 Initially I set about trying to make a website with HTML/CSS alone like I used to back in the 90's but it wasn't long before the need to include a scripting language arose (PHP - since it runs on most toasters). However, I tried to use as little PHP as possible in order to build my website [chriskempson.com](http://chriskempson.com).
+
+Get crafting!
