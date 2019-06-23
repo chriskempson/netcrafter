@@ -3,6 +3,8 @@ Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of
 
 Netcrafter is a ~~way of life~~ way of building websites that unashamedly slaps you in the face with HTML. Netcrafter is made possible by a scripting language quickly gaining traction on the World Wide Web known as PHP. With Netcrafter you'll be churning out radical websites before the dot-com bubble has even burst!
 
+**Scientific Fact:** Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) measuring just a few KBs ~~heavy~~ light!
+
 ## Up and running before your dial-up has time to sync!
 Shove this up in your CLI
 
