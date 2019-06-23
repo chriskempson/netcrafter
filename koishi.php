@@ -1,6 +1,6 @@
 <?php
 /**
- * Koishi v1.0 - Minimalist hand-written HTML websites
+ * Koishi v1.0 - Handcrafted HTML websites with a sprinkling of PHP
  * https://github.com/chriskempson/koishi
  */
  
@@ -9,8 +9,9 @@
 // All paths should be defined with trailing slashes
 
 define ('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/');
-define ('PARTIAL_PATH', DOCUMENT_ROOT . 'partials/');
-define ('PLUGIN_PATH', DOCUMENT_ROOT . 'plugins/');
+define ('SCRIPT_FILENAME', $_SERVER['SCRIPT_FILENAME']);
+define ('PARTIAL_PATH', DOCUMENT_ROOT . '../partials/');
+define ('PLUGIN_PATH', DOCUMENT_ROOT . '../plugins/');
 
 // **** HELPER FUNCTIONS ****************************************************
 // These functions are exposed by Koishi to help you build your website
@@ -27,25 +28,59 @@ define ('PLUGIN_PATH', DOCUMENT_ROOT . 'plugins/');
 */
 function partial($name, $variables = null)
 {
-	// Make variables available to include's scope
-	if (is_array($variables)) extract($variables);
+    // Make variables available to include's scope
+    if (is_array($variables)) extract($variables);
 
-	include PARTIAL_PATH . $name . '.php';
+    include PARTIAL_PATH . $name . '.php';
 }
 
 /**
-* Reads a file and returns any values to be added to the store via the set()
-* function.
+* Returns the whole meta data array or a single value from the meta data 
+* found within the current running script
 *
-* @param string $file Path to the file making use of the set() function
+* @param string $name Meta data array index value to return
 *
-* @return array A list of all the setings found by key and value
+* @return string Returns a single specified value if $name is set
+* @return array The whole meta data array
 */
-function meta_from_file($file)
+function meta($name = null)
 {
-	$meta = null;
-	if (file_exists($file)) include $file;
-	return $meta;
+    // Only call 'meta_from_file' once
+    global $script_meta;
+    if (!$script_meta) {
+        $script_meta = meta_from_file(SCRIPT_FILENAME);
+    }
+
+    if ($name) return $script_meta[$name];
+    else return $script_meta;
+}
+
+/**
+* Returns the whole meta data array or a single value from the meta data 
+* found within a specified file. Also includes the file path in the returned aray.
+*
+* @param string $file Path to a file containing meta tags
+*
+* @return array A files meta tags plus filename
+* @return array The whole meta data array* 
+*/
+function meta_from_file($file, $name = null)
+{
+    // Prepend file name
+    $file_meta['file'] = $file;
+
+    // Add title tag
+    preg_match("/<title>(.*)<\/title>/siU", 
+        file_get_contents($file), 
+        $title
+    );
+    if (isset($title[1])) $file_meta['title'] = $title[1];
+
+    // Merge meta arrays
+    $meta = array_merge($file_meta, get_meta_tags($file));
+
+    if ($name) return $file_meta[$name];
+    else return $file_meta;
 }
 
 // **** PLUGINS *************************************************************
@@ -55,3 +90,14 @@ foreach (glob(PLUGIN_PATH . '*/plugin.php') as $filename)
 {
     include $filename;
 }
+
+// **** INIT ****************************************************************
+
+// Deliever a 404 if a file doesn't exist when no filename is requested
+if (!is_file(DOCUMENT_ROOT . $_SERVER["REQUEST_URI"]. '/index.php')) {
+    http_response_code(404);
+    die('File ' . $_SERVER["REQUEST_URI"] . '/index.php not found.');
+}
+
+// Get the ball rolling with the first partial
+partial('html-head');
