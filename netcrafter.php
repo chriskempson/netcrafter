@@ -28,7 +28,7 @@ define ('PLUGIN_PATH', DOCUMENT_ROOT . '../plugins/');
 */
 function partial($name, $variables = null)
 {
-    // Make variables available to include's scope
+    // Make variables available to include()'s scope
     if (is_array($variables)) extract($variables);
 
     include PARTIAL_PATH . $name . '.php';
@@ -77,7 +77,7 @@ function meta_from_file($file, $name = null)
     if (isset($title[1])) $file_meta['title'] = $title[1];
 
     // Merge meta arrays
-    $meta = array_merge($file_meta, get_meta_tags($file));
+    $file_meta = array_merge($file_meta, get_meta_tags($file));
 
     if ($name) return $file_meta[$name];
     else return $file_meta;
@@ -93,7 +93,7 @@ foreach (glob(PLUGIN_PATH . '*/plugin.php') as $filename)
 
 // **** INIT ****************************************************************
 
-// Deliever a 404 if a file doesn't exist when no filename is requested
+// Deliver a 404 if a file doesn't exist when no filename is requested
 if (!is_file(DOCUMENT_ROOT . $_SERVER["REQUEST_URI"]. '/index.php')) {
     http_response_code(404);
     die('File ' . $_SERVER["REQUEST_URI"] . '/index.php not found.');
