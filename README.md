@@ -1,27 +1,30 @@
 # ![Netcrafter](public/netcrafter.gif)
-Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of Frontpage/Dreamweaver and lovingly craft your small part of the Internet with finger generated HTML!
+Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of Frontpage/Dreamweaver, ready your GIFs, and lovingly craft your small part of the Internet with finger generated HTML and your new best friend Netcrafter.
 
-Netcrafter is a ~~way of life~~ way of building websites that unashamedly slaps you in the face with HTML. Netcrafter is made possible by a scripting language quickly gaining traction on the World Wide Web known as PHP. With Netcrafter you'll be churning out radical websites before the dot-com bubble has even burst!
+Netcrafter is a ~~religious cult~~, ~~life-philosophy~~, way of building websites that unashamedly slaps you in the face with [HTML - the future of the Internet](https://blog.neocities.org/blog/2015/02/27/we-are-the-future.html). The magic of Netcrafter is made possible by a scripting language that has started to gain traction in today's World Wide Web known as [PHP](https://web.archive.org/web/20000301133004/http://php.net/) (Personal Home Page) language. With Netcrafter you'll be churning out cool websites before the dot-com bubble has even burst!
 
-**Scientific Fact:** Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) measuring just a few KBs ~~heavy~~ light!
+**Scientific Facts:** 
+* Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) measuring just a few KBs ~~heavy~~ light.
+* Recent entirely-fabricated studies show, users of Netcrafter may have lower stress levels and may experience a boost in the production of endorphins. <sup>1</sup>
 
 ## Up and running before your dial-up has time to sync!
-Shove this in your CLI:
+Shove this in your post-PHP-CLI-installed terminal:
 
     git clone git@github.com:chriskempson/netcrafter.git my-first-website
     cd my-first-website
     ./serve-website.sh
 
-Next, point a modern browser (e.g. Netscape Navigator, IE) at http://localhost:8000. Now, marvel at the stunning welcome page.
+Next, point a modern browser (e.g. Netscape Navigator, Internet Explorer) at http://localhost:8000. Now, marvel (in awestruck silence) at the breathtakingly stunning welcome page.
 
 ## The lowdown
-A ultra minimalist way of creating simple websites by hand. Essentially the core philosophy of Netcrafter boils down to this:
+A ultra minimalist way of creating the next generation of HTML/CSS/JS websites by hand. 
+Essentially the core philosophy of Netcrafter boils down to this:
 
-- Partials - Reusable small HTML snippets (a la SSI)
-- Meta Data - Describe attributes of your HTML pages
-- Plugins - Power up your HTML
-- Directories - Uses real directories!
-- Static HTML - Generate purity
+- Partials - Reusable, small HTML snippets (a la your old friend SSI)
+- Meta Data - Attach and retrieve information to your HTML pages using \<meta\> tags!
+- Plugins - Power up your HTML with quick and dirty PHP hacks
+- Directories - Simply use real directories to structure your website
+- Static HTML - Blazingly fast, next-gen static content generator called WGET
 
 ### Partials
 Partials are little snippets of HTML you can reuse across multiple pages just like your friend SSI.
@@ -107,14 +110,14 @@ Generate static html and check for broken internal links with:
 
     ./generate_static.sh
 
-This will export a static version of your website to a `static` directory. You can now ssh, rsync, ftp, telnet your site up your server.
+Provided your box has wget installed (slap your wrist if it doesn't), this will export a static version of your website to a `static` directory. You can now ssh, rsync, ftp, telnet your site up your server.
 
 Why not get a huge 1GB of ad-free hosting by grabbing a free account at [Neocities](https://neocities.org) and adding the following to the `./generate_static.sh` script
 
     neocities push $STATIC_DIR
 
 ## Writing Plugins
-To create a new plugin, just add a new directory with a name of your choosing to the plugins directory and create a new `plugin.php` file within. All you need to add now is some lovely code to your shiney new plugin. e.g. `plugins/years_since/plugin.php`.
+To create a new ~~quick and dirty PHP hack~~ beautifully authored plugin, just add a new directory with a name of your very own choosing to the plugins directory and create a new `plugin.php` file within. All you need to do now is add some lovely code to your shiny new plugin. e.g. a file called `plugins/years_since/plugin.php` might contain the following:
 
 ```php
 <?php 
@@ -134,8 +137,12 @@ function years_since($date) {
 ```
 
 ## What the Netcrafter?
-I used a few static content generators but I was always forgetting the commands required to do simple things like add a new page. I just wanted to author an HTML website and didn't care for learning about the nuances of a static content generator. So I built a very simple consisting of a single PHP file and a couple of scripts weighing in at a few KBs.
+I used a few static content generators before but I was always forgetting the [tens](https://learn.cloudcannon.com/jekyll-cheat-sheet/) and [hundreds](https://gohugo.io/documentation/) of features, variables and commands and soon became tired of having to search through documentation. I just wanted to build an HTML website, I didn't care for learning about the varied nuances of a static content generator! So I ended up building my own consisting of a single PHP file and a couple of scripts weighing in at a few KBs. 
 
-Initially I set about trying to make a website with HTML/CSS alone like I used to back in the 90's but it wasn't long before the need to include a scripting language arose (PHP - since it runs on most toasters). However, I tried to use as little PHP as possible in order to build my website [chriskempson.com](http://chriskempson.com).
+Initially I set about trying to make a website with HTML/CSS alone like I used to back in the 90's, even saying hello again to that old shady customer Mr. SSI. However, it wasn't long before I saw sense and decided to include a scripting language choosing PHP since it runs on all of my toasters (and my neighbours fridge, (and her neighbours kettle or so I'm told)). However, as HTML is the focus here and since I firmly believe that perfection is achieved not when there is nothing left to add, but when there is nothing left to take away, I tried to use as little PHP as  possible when building the thing that now powers my website [chriskempson.com](http://chriskempson.com).
 
-Get crafting!
+For the past year or so I've been enjoying using what is now Netcrafter, or rather, I've been enjoying working on my HTML websites and not having to even think about the fact that I'm using Netcrafter. Now is perhaps the time to share my little creation in the hopes that other HTML lovers will find a place in their heart and their servers for Netcrafter.
+
+Get Netcrafting! /end cheesy sign-off
+
+<sup>1</sup> Although trends may have suggested that Netcrafter use may be addictive, it is important to gain a sense of perspective regarding this matter, therefore I would like to draw your attention to the fact that, as of yet, there have been no cases in which Netcrafter was proven to be a contributing factor to the death of an individual.
