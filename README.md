@@ -4,7 +4,8 @@ Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of
 Netcrafter is a ~~religious cult~~, ~~life-philosophy~~, way of building websites that unashamedly slaps you in the face with [HTML - the future of the Internet](https://blog.neocities.org/blog/2015/02/27/we-are-the-future.html). The magic of Netcrafter is made possible by a scripting language that has started to gain traction in today's World Wide Web known as [PHP](https://web.archive.org/web/20000301133004/http://php.net/) (Personal Home Page) language. With Netcrafter you'll be churning out cool websites before the dot-com bubble has even burst!
 
 **Scientific Facts:** 
-* Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) measuring just a few KBs ~~heavy~~ light.
+* Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) less than 100 SLOC's long and takes up just a few KBs on your floppy disk!
+* Depending of the nature of your ~~adult website~~ life modelling appreciation website, you'll hopefully have no need for PHP on your server of the webs. Just [generate static HTML](#generate-static-html) and be on your merry way to _server-side scripting-less nirvana&trade;_.
 * Recent entirely-fabricated studies show, users of Netcrafter may have lower stress levels and may experience a boost in the production of endorphins. [<sup>1</sup>](#addendum)
 
 ## Up and running before your dial-up has time to sync!
@@ -105,7 +106,7 @@ An example HTML page might look like:
     <?php partial('footer') ?>
 ```
 
-### Static HTML
+### Generate Static HTML
 Generate static html and check for broken internal links with:
 
     ./generate_static.sh
