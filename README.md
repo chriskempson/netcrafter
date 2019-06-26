@@ -5,7 +5,7 @@ Netcrafter is a ~~religious cult~~, ~~life-philosophy~~, way of building website
 
 **Scientific Facts:** 
 * Netcrafter is lighter than air and fits inside a [single PHP file](https://github.com/chriskempson/netcrafter/blob/master/netcrafter.php) measuring just a few KBs ~~heavy~~ light.
-* Recent entirely-fabricated studies show, users of Netcrafter may have lower stress levels and may experience a boost in the production of endorphins. <sup>1</sup>
+* Recent entirely-fabricated studies show, users of Netcrafter may have lower stress levels and may experience a boost in the production of endorphins. [<sup>1</sup>](#addendum)
 
 ## Up and running before your dial-up has time to sync!
 Shove this in your post-PHP-CLI-installed terminal:
@@ -145,4 +145,7 @@ For the past year or so I've been enjoying using what is now Netcrafter, or rath
 
 Get Netcrafting! /end cheesy sign-off
 
+---
+
+### Addendum
 <sup>1</sup> Although trends may have suggested that Netcrafter use may be addictive, it is important to gain a sense of perspective regarding this matter, therefore I would like to draw your attention to the fact that, as of yet, there have been no cases in which Netcrafter was proven to be a contributing factor to the death of an individual.
