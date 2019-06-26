@@ -30,7 +30,7 @@ Essentially the core philosophy of Netcrafter boils down to this:
 ### Partials
 Partials are little snippets of HTML you can reuse across multiple pages just like your friend SSI.
 
-```html
+```php
     <?= partial('navigation') ?> 
 ```
 ### Meta
@@ -42,31 +42,31 @@ You can add meta data to your HTML pages with... meta tags.
 
 You can get meta data for the current html page anywhere in your site with:
 
-```html
+```php
     <?= meta('date') ?>
 ```
 
 Or grab all available meta data as an array with:
 
-```html
+```php
     <?= meta() ?>
 ```
 
 You might also want to grab meta data for another file:
 
-```html
+```php
     <?= meta_from_file('about.php', 'date') ?>
 ```
 
 Or grab all available meta as an array with:
 
-```html
+```php
     <?= meta_from_file('about.php') ?>
 ```
 
 ### Plugins
 Plugins are simple to use in any of your HTML pages:
-```html
+```php
    <?= years_since('1985') >
 ```
 
@@ -92,7 +92,7 @@ An example directory structure might look like:
     ! - webcrafter.php
 
 An example HTML page might look like:
-```html
+```php
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/../netcrafter.php' ?>
 
     <title>Netcrafter</title>
