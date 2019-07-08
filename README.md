@@ -1,5 +1,5 @@
 # ![Netcrafter](public/netcrafter.gif)
-Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of Frontpage/Dreamweaver, ready your GIFs, and lovingly craft your small part of the Internet with finger generated HTML and your new best friend Netcrafter.
+Fire up your single-core 500Mhz CPU, double-click on your entirely legal copy of Frontpage/Dreamweaver, ready your GIFs, and lovingly craft your small part of the Internet with finger generated HTML and your new best friend - Netcrafter!
 
 Netcrafter is a ~~religious cult~~, ~~life-philosophy~~, way of building websites that unashamedly slaps you in the face with [HTML - the future of the Internet](https://blog.neocities.org/blog/2015/02/27/we-are-the-future.html). The magic of Netcrafter is made possible by a scripting language that has started to gain traction in today's World Wide Web known as [PHP](https://web.archive.org/web/20000301133004/http://php.net/) (Personal Home Page) language. With Netcrafter you'll be churning out cool websites before the dot-com bubble has even burst!
 
@@ -18,7 +18,7 @@ Shove this in your post-PHP-CLI-installed terminal:
 Next, point a modern browser (e.g. Netscape Navigator, Internet Explorer) at http://localhost:8000. Now, marvel (in awestruck silence) at the breathtakingly stunning welcome page.
 
 ## The lowdown
-A ultra minimalist way of creating the next generation of HTML/CSS/JS websites by hand. 
+An ultra minimalist, ultra simple way of creating the next generation of HTML/CSS/JS websites by hand.
 Essentially the core philosophy of Netcrafter boils down to this:
 
 - Partials - Reusable, small HTML snippets (a la your old friend SSI)
@@ -67,7 +67,7 @@ Or grab all available meta as an array with:
 ### Plugins
 Plugins are simple to use in any of your HTML pages:
 ```php
-   <?= years_since('1985') >
+   <?= years_since('1985') ?>
 ```
 
 ### Directories
