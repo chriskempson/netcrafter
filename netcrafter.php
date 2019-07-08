@@ -6,7 +6,7 @@
  
 // **** CONFIG **************************************************************
 // Feel free to change any of the settings below to your liking
-// All paths should be defined with trailing slashes
+// NOTE: All paths should be defined with trailing slashes
 
 define ('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/');
 define ('SCRIPT_FILENAME', $_SERVER['SCRIPT_FILENAME']);
