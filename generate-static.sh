@@ -24,7 +24,7 @@ rm --force --recursive $STATIC_DIR/*
 # of wget for processing with grep
 RESULT=$(wget --recursive --page-requisites --no-parent --no-host-directories \
     --execute robots=off --domains $DOMAIN --directory-prefix=$STATIC_DIR \
-    --restrict-file-names=nocontrol \ # allow non-ascii filenames
+    --restrict-file-names=nocontrol \
     $PORTABLE \
     http://$DOMAIN:$PORT/robots.txt \
     http://$DOMAIN:$PORT \
