@@ -11,7 +11,7 @@ Netcrafter is a ~~religious cult~~, ~~life-philosophy~~, way of building website
 ## Up and running before your dial-up has time to sync!
 Shove this in your post-PHP-CLI-installed terminal:
 
-    git clone git@github.com:chriskempson/netcrafter.git my-first-website
+    git clone https://github.com/chriskempson/netcrafter.git my-first-website
     cd my-first-website
     ./serve-website.sh
 
